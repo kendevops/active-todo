@@ -1,37 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="head"><p id="head-p"> T O D O </p>
+            <img id="sunset" src="images/icon-moon.svg" alt="">
+        </div>
+        <div class="typearea">
+        <button class="addbutn"onchange="addnew()"></button>
+        <input onfocus="func(this)" type="text" class="addtask" onchange="addnew()" placeholder="create a new todo...." >
+    </div>
+    
+    <div class="foot">
+        <div class="list"></div>
 
-    <title>Todo app</title>
+    <div class="footer">
+    
+   <p id="allcount"></p>
+   <div class="inner">
+   <p id="all" onclick="alltasks()" >All</p>
+   <p id="active" onclick="activetask()">Active</p>
+   <p id="completed"  onclick="completedtask()">Completed</p>
+</div>
+   
+   <p id="clearcompleted"  onclick="clearcompletedtask()">Clear Completed</p>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-  </head>
-  <body>
-    Todo
-
-    <!-- Add dynamic number -->
-    items left All Active Completed Clear Completed Drag and drop to reorder
-    list
-
-    <div class="attribution">Coded by <a href="#">Your Name Here</a>.</div>
-  </body>
+</div>
+</div> 
+        <div class="smallerphone">
+            <p id="allId" onclick="alltasks()" >All</p>
+    <p id="activeId" onclick="activetask()">Active</p>
+   <p id="completedId"  onclick="completedtask()">Completed</p>
+        </div>
+   </div>
+    
+    
+   <script src="main.js" ></script>
+</body>
 </html>

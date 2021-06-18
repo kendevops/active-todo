@@ -40,7 +40,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://profnike.github.io/Todo-Javascript/)
+- Solution URL: [https://profnike.github.io/Todo-Javascript/](https://profnike.github.io/Todo-Javascript/)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
